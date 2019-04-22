@@ -8,8 +8,8 @@ def user_interaction(con, client_addr):
     print("Client connected: ", client_addr)
     user_name_serialized = con.recv(2048)
     user_name = pickle.loads(user_name_serialized)
-    server = coordinator[int(user_name[4])%8]
-    print('The coordinator node is: node_', int(user_name[4])%8)
+    server = coordinator[(int(user_name[4])%8)+1]
+    print('The coordinator node is: node_', (int(user_name[4])%8)+1)
     con.send(products_ser)
     client_cart_ser = con.recv(4096)
     client_cart = pickle.loads(client_cart_ser)
