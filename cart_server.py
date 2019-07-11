@@ -2,7 +2,7 @@ import socket
 import _pickle as pickle
 import _thread
 
-coordinator = { 1: '159.65.159.151', 2: '206.189.140.69', 3: '206.189.140.70', 4: '206.189.140.164', 5: '139.59.94.37', 6: '139.59.36.232', 7: '159.89.162.14', 8: '159.89.173.82'}
+coordinator = { 1: 'ip-1', 2: 'ip-2', 3: 'ip-3', 4: 'ip-4', 5: 'ip-5', 6: 'ip-6', 7: 'ip-7', 8: 'ip-8'}
 
 def user_interaction(con, client_addr):
     print("Client connected: ", client_addr)
