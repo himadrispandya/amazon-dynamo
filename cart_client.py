@@ -5,9 +5,9 @@ from uhashring import HashRing
 
 hr = HashRing(nodes=['node_1', 'node_2', 'node_3', 'node_4', 'node_5', 'node_6', 'node_7', 'node_8'], vnodes = 1)
 
-nodes = {'node_1': '159.65.159.151', 'node_2': '206.189.140.69', 'node_3': '206.189.140.70', 'node_4': '206.189.140.164', 'node_5': '139.59.94.37', 'node_6': '139.59.36.232', 'node_7': '159.89.162.14', 'node_8': '159.89.173.82'}
+nodes = {'node_1': 'ip-1', 'node_2': 'ip-2', 'node_3': 'ip-3', 'node_4': 'ip-4', 'node_5': 'ip-5', 'node_6': 'ip-6', 'node_7': 'ip-7', 'node_8': 'ip-8'}
 
-port = 7771
+port = 7771 
 
 user_name = input('Enter your username: ')
 server_name = hr.get_node(user_name)
