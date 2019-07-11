@@ -12,7 +12,7 @@ for i in range(32):
 
 		r = redis.Redis(
     			host=ip,
-			password = 'RMHR_2118',
+			password = 'redis_password',
     			port=6379)
 
 	
